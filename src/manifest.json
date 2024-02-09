@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Wikipedia Page Popularity Meter",
+    "version": "1.0.0",
+    "description": "See the relative popularity of pages on Wikipedia.",
+    "permissions": [
+        "storage"
+    ],
+    "icons": {
+        "128": "icon.png"
+      },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.wikipedia.org/wiki/*",
+                "http://*.wikipedia.org/wiki/*"
+            ],
+            "run_at": "document_idle",
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "main.css"
+            ]
+        }
+    ]
+}
