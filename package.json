@@ -4,7 +4,7 @@
   "description": "See the relative popularity of pages on Wikipedia.",
   "scripts": {
     "start": "parcel watch src/manifest.json --host localhost --config @parcel/config-webextension",
-    "build": "parcel build src/manifest.json --config @parcel/config-webextension"
+    "build": "parcel build src/manifest.json --config @parcel/config-webextension --no-source-maps"
   },
   "author": "Kyle Dagman",
   "license": "ISC",
