@@ -96,7 +96,7 @@ function getTopBound() {
     <input type="radio" name="rating" id="rata2"><label for="rata2">2</label>
     <input type="radio" name="rating" id="rata1"><label for="rata1">1</label>    
 </div>`;
-    const pageTitle = decodeURIComponent(window.location.href.split("/").pop());
+    const pageTitle = decodeURIComponent(window.location.href.split("/").pop().split('#')[0]);
     const pageViews = await getPageviews(pageTitle);
     if (pageViews !== null) {
         let topBound = await getTopBound();
